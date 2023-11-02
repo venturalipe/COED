@@ -1,0 +1,45 @@
+footer  {
+ /* Estilos específicos para el contenido */
+    background-color: rgb(143, 26, 5);
+    padding: 10px;
+    border-radius: 15px;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+
+}
+body {
+
+  background: linear-gradient(to bottom, #852406, #74150b);
+
+}
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(143, 26, 5);
+    color: rgb(167, 167, 167);
+    margin-bottom: -30px; 
+    
+}
+
+img {
+    float: left; 
+    margin-right: 10px; 
+    border-radius: 10px;
+  }
+  p  {
+    text-align: justify;
+    color: rgb(209, 199, 199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  nav {
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+  }
+  #B3 {
+    padding: 0%;
+  }

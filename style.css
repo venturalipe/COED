@@ -1,0 +1,100 @@
+footer {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 15px;
+    margin: -2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(to bottom,  #24ec09, #2908e2)
+}
+#A1 {
+    float: left;
+    margin-left: 55px;
+    margin-top: -75px;
+    border-radius: 15px;
+
+}
+#B1 {
+    margin-left: 15px;
+    
+}
+#M1 {
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+}
+Body {
+  background: linear-gradient(to bottom, #24ec09, #2908e2);
+    background-attachment: fixed;
+   
+}
+#miSeccion {
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    gap: 45px;
+    margin-top: 50px;
+    
+  }
+  
+  div {
+    /* Estilos específicos para el contenido */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translateY(4px); 
+    transform: scale(1.2); 
+    opacity: 0.7; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+.card1, .card2 {
+    animation: mover 10s 100;
+}
+    
+  @keyframes mover {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-35px); 
+    }
+  }
+  
+  .card2 {
+    animation-delay: 3s; 
+  }
+  #M2 {
+    background: linear-gradient(to bottom, #067cc0, #2908e2)
+
+  }
+  nav{
+    border-radius: 10px;
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+    background: linear-gradient(to bottom, #9c27b0, #e91e63)
+    
+  }
+
+  table {
+    width: 80%;
+  }
+  
+  td {
+    width: 25%;
+  }
+
+
+  
+
+  
+
+  
+  

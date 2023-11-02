@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>EVENTOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+
+</head>
+<body background= "IMAGENES/hell.png">
+    
+    <h1>GALERIA DE EVENTOS</h1>
+    <DIv id="LOGO">
+        <A href="">
+         <Img src="IMAGENES/1.jpeg"></A> </Img>
+    
+     </DIv >
+
+    <DIv id="SALIR">
+        <A href="Index.html">
+         <Img src="IMAGENES/icon exit.png"></A> </Img>
+    
+     </DIv >
+    <span class="linea"></span>
+    
+    
+
+
+
+    <section class="galeria">
+        <a  href="#imagen1"> <img src="IMAGENES/teatro.jpg" alt=""></a>
+        <a  href="#imagen2"> <img src="IMAGENES/empren.jpg" alt=""></a>
+        <a  href="#imagen3"> <img src="IMAGENES/logros.jpg" alt=""></a>
+        <a  href="#imagen4"> <img src="IMAGENES/madre.jpg" alt=""></a>
+        <a href="#imagen5"> <img src="IMAGENES/sep.jpg" alt=""></a>
+        <a  href="#imagen6"> <img src="IMAGENES/niño 1.jpg" alt=""></a>
+        
+    </section>
+    <article class="light-box" id="imagen1">
+    <a href="#imagen6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="IMAGENES/teatro.jpg" alt="">
+    <a href="#imagen2" class="next">  <i class="fa-solid fa-arrow-right"></i> </a>
+    <a href="#" class="close"> x </a>
+   
+    </article>
+    
+    <article class="light-box" id="imagen2">
+        <a href="#imagen1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="IMAGENES/empren.jpg" alt="">
+        <a href="#imagen3" class="next">  <i class="fa-solid fa-arrow-right"></i> </a>
+        <a href="#" class="close"> x </a>
+       
+        </article>
+
+        <article class="light-box" id="imagen3">
+            <a href="#imagen2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="IMAGENES/logros.jpg" alt="">
+            <a href="#imagen4" class="next">  <i class="fa-solid fa-arrow-right"></i> </a>
+            <a href="#" class="close"> x </a>
+           
+            </article>
+
+            <article class="light-box" id="imagen4">
+                <a href="#imagen3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="IMAGENES/madre.jpg" alt="">
+                <a href="#imagen5" class="next">  <i class="fa-solid fa-arrow-right"></i> </a>
+                <a href="#" class="close"> x </a>
+               
+                </article>
+
+                <article class="light-box" id="imagen5">
+                    <a href="#imagen4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                    <img src="IMAGENES/sep.jpg" alt="">
+                    <a href="#imagen6" class="next">  <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="#" class="close"> x </a>
+                   
+                    </article>
+
+                    <article class="light-box" id="imagen6">
+                        <a href="#imagen5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                        <img src="IMAGENES/niño 1.jpg" alt="">
+                        <a href="#imagen1" class="next">  <i class="fa-solid fa-arrow-right"></i> </a>
+                        <a href="#" class="close"> x </a>
+                       
+                        </article>
+                        
+    
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0 ;
+    font-size: 40px;
+    color: #000000;
+}
+.linea{
+    background: #d30dd3;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+    
+    }
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+   
+    
+}
+.galeria > a{
+    display: block;
+    position: relative;
+    box-shadow: 0 0 6px rgb(0, 0, 0,.5);
+    overflow: hidden;
+
+    
+}
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg ) scale(1.3);
+ 
+}
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,.5);
+    width: 100%;
+    height: 100vh;
+    transition: transform .3s ease-in-out;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+
+}
+.light-box img{
+    width: 75vw;
+    max-height:70vh ;
+}
+.light-box:target{
+    transform: scale(1);
+}
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: black;
+    color:#fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+line-height: 40px;
+border-radius: 50%;
+
+}
+.next{
+    display: block;
+    background: #fff;
+  color: #000;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+@media screen and (max-width:400px){
+    .galeria{
+        grid-template-columns:( auto-fit,minmax(200px, 1fr));
+    }
+    .close{
+        top: 20px;
+        right: 20px;
+    }
+    
+}
+#SALIR IMG{
+        width: 100%;
+       
+        
+    }
+
+        #SALIR{ width: 100PX;
+            height:100PX ;
+          margin-top: -90PX;
+          margin-left: 70%;
+           position: static;
+            z-index: 90%  ;
+            }
+
+            #LOGO IMG{
+            width: 100%;
+            
+        }
+        
+            #LOGO{ width: 100PX;
+                height:90PX ;
+              margin-top: -70PX;
+              margin-left: 80%;
+               position: static;
+                z-index: 90%  ;
+                }
+
+    </style>
+</body>
+</html>
